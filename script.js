@@ -4,15 +4,15 @@ const get = document.querySelector('#get')
 const text_p = document.querySelector('p')
 
 save.onclick = () => {
-    save_cookie()
-}
+    save_cookie(inpt.value)
+}   
 
 get.onclick = () => {
     get_cookie()
 } 
 
-function save_cookie() {
-    document.cookie = "Info=124"
+function save_cookie(text) {
+    document.cookie = text
     console.log(document.cookie)
 }
 
